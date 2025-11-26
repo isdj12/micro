@@ -1,0 +1,4 @@
+# Enable custom bootloader hooks
+CONFIG_BOOTLOADER_CUSTOM_RESERVE_RTC=n
+
+# This file ensures bootloader hooks are enabled
