@@ -7,6 +7,9 @@ else()
     set(EXTRA_COMPONENT_DIRS "${_bootloader_dir}")
 endif()
 
+# Tell bootloader to also use our custom components
+set(BOOTLOADER_EXTRA_COMPONENT_DIRS "${_bootloader_dir}")
+
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
 project(my_bootloader_project)

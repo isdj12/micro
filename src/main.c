@@ -13,7 +13,7 @@ void app_main(void)
     
     ESP_LOGI(TAG, "Application started!");
     
-    while (1) {
+    while (0) {
         gpio_set_level(LED_GPIO, 1);
         vTaskDelay(pdMS_TO_TICKS(500));
         gpio_set_level(LED_GPIO, 0);
